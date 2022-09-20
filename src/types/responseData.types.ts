@@ -1,0 +1,31 @@
+export interface Info {
+  count: number
+  pages: number
+  next: string | null
+  prev: string | null
+}
+
+export interface Origin {
+  name: string
+  url: string
+}
+
+export interface Results {
+  id: number
+  name: string
+  status: string
+  species: string
+  type: string
+  gender: string
+  origin: Origin
+  location: Origin
+  image: string
+  episode: string[]
+  url: string
+  created: string
+}
+
+export interface ResponseData {
+  info: Info
+  results: Results[]
+}
